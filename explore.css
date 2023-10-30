@@ -1,0 +1,165 @@
+html,body{
+width:100%;
+height:100%;
+padding:0px;
+margin:0px;
+overflow-x: hidden;    
+}
+body{
+    background:rgba(14, 30, 39, 0.968);
+}
+header{
+    position:relative;
+
+
+}
+header .logo a{
+    color:rgb(18, 206, 206);
+}
+header nav li a{
+    color:rgb(18, 206, 206);
+}
+header nav li a:hover{
+    color:rgba(14, 30, 39, 0.968);
+    background:rgb(18, 206, 206);
+}
+img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+}
+main ul{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:20px;
+    justify-content:space-around;
+    justify-items:center;
+    box-sizing:border-box;
+    margin:7% 10%;
+}
+#list{
+    width:100%;
+    grid-column:1/span 2;
+}
+
+main ul li{
+    display:flex;
+    
+    background:rgb(152, 195, 203);
+    
+    border-radius:8px;
+    overflow: hidden;
+    box-shadow:1px 2px 3px black;
+}
+main ul li .place{
+    display:flex;
+    flex-direction:column;
+    text-align:justify;
+    padding:10px;
+    justify-content:space-between;
+}
+main ul li .place .explore a{
+    display:block;
+    text-align:right;
+    margin:20px 40px;
+    color:rgba(29, 14, 231, 0.845);
+    font-size:20px;
+   font-weight:bolder;
+}
+main ul li .place .explore a:hover{
+    color:rgba(23, 6, 61, 0.945);
+    font-size:23px;
+    
+}
+footer{
+    background:rgb(4, 23, 31);
+}
+.nav_bar{
+    color:rgb(18, 206, 206);
+    margin:0.5em 2em;
+}
+.nav_box ul{
+    background-color: rgb(10, 58, 76);
+}
+.nav_box ul li a{
+   color: rgb(18, 206, 206);
+}
+.nav_box ul li a:hover{
+    color:rgba(14, 30, 39, 0.968);
+    background:rgb(18, 206, 206);
+}
+
+@media (max-width:1200px){
+    main ul{
+     margin:40px;
+    }
+    
+ }
+@media (max-width:920px){
+   img{
+    width:100%;
+   }
+   main ul li{
+    margin:20px 0px;
+   }
+   main ul li{
+    display:block;
+   }
+}
+@media (max-width:600px){
+    main ul {
+        margin:0px;
+        padding:4px;
+        
+    }
+    main ul li p{
+        text-align:normal;
+        height:80px;
+        overflow:hidden;
+    }
+    main ul li:nth-child(2) h1{
+        font-size:1.5em;
+    }
+    main ul li{
+        height:450px;
+        
+    }
+}
+@media (max-width:500px){
+    main ul li{
+        display:block;
+        font-size:1em;
+        height:auto;
+        padding:0.4em;
+        margin:2em 3em;
+
+    }
+    main ul{
+        display:block;
+    }
+    main ul {
+        margin-left:0px;
+    }
+    main ul li:nth-child(3){
+        width:230px;
+        margin-left:0px;
+        display:block;
+
+    }
+    main ul li:nth-child(3){
+        display:none;
+        
+    }
+    img{
+        width:100%;
+        height:60%;
+        border-radius:8px;
+        
+    }
+    main ul li h1{
+        font-size:1.5em;
+        margin:0px;
+        padding:0px;
+    }
+}
+
